@@ -1,0 +1,22 @@
+{
+  "name": "shefa-luxe",
+  "version": "1.0.0",
+  "description": "E commerce site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dueka/Shefa-Luxe.git"
+  },
+  "keywords": [
+    "Ecommerce"
+  ],
+  "author": "duekanem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dueka/Shefa-Luxe/issues"
+  },
+  "homepage": "https://github.com/dueka/Shefa-Luxe#readme"
+}

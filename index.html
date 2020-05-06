@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shefa Luxe</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="master.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Charm:700"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay">
+        <p class="screen">SHEFA LUXE</p>
+        <div class="intro">
+          <button class="myBtn" onclick="fadeOut()">EXPLORE</button>
+        </div>
+      </div>
+      
+      <div class="overlay-2"></div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="strips">
+        <div class="s-one"></div>
+        <div class="s-two"></div>
+        <div class="s-three"></div>
+      </div>
+
+      <div class="top-bar">
+        <ul>
+          <li>
+            <div class="account">
+              <i class="fa fa-user"></i>
+              <span><a href="account.html">Account</a></span>
+            </div>
+          </li>
+
+          <li>
+            <div class="logo">
+              <span>Shefa Luxe</span>
+            </div>
+          </li>
+
+          <li>
+            <div class="search">
+              <i class="fa fa-search"></i>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-btn">
+              <span class="one"></span>
+              <span class="two"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="data">
+        <div class="contact">
+          <span><a href="contact.html">Contact</a></span>
+
+        </div>
+
+        <div class="tag">
+          <span
+            >Don't Settle For, <br />
+            Basic Baby</span
+          >
+        </div>
+
+        <div class="year">2020</div>
+
+        <div class="arrow-left">
+          <i class="fa fa-arrow-left"></i>
+        </div>
+
+        <div class="arrow-right">
+          <i class="fa fa-arrow-right"></i>
+        </div>
+
+        <div class="add">
+          <i class="fa fa-plus"></i>
+        </div>
+      </div>
+
+      <div class="img">
+        <img src="hero.jpg" alt="" />
+      </div>
+
+      <div class="title">
+        <span>Shefa<br />Luxe</span>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="e-shop">
+        <span><a href="shop.html">Shop</a></span>
+      </div>
+
+      <div class="tag-line">
+        <span><a href="collection.html">Discover Products</a></span>
+      </div>
+
+      <div class="media">
+        <ul>
+          <!-- <li><i class="fa fa-facebook"></i></li> -->
+          <li>
+            <a href="https://www.instagram.com/shefaluxe/">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <!-- <li><i class="fa fa-twitter"></i></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function fadeOut() {
+        TweenMax.to(".myBtn", 1, {
+          y: -100,
+          opacity: 0,
+        });
+
+        TweenMax.to(".screen", 2, {
+          y: -400,
+          opacity: 0,
+          ease: Power2.easeInOut,
+          delay: 2,
+        });
+
+        TweenMax.from(".overlay", 2, {
+          ease: Power2.easeInOut,
+        });
+
+        TweenMax.to(".overlay", 2, {
+          delay: 2.6,
+          top: "-110%",
+          ease: Expo.easeInOut,
+        });
+
+        TweenMax.to(".overlay-2", 2, {
+          delay: 3,
+          top: "-110%",
+          ease: Expo.easeInOut,
+        });
+
+        TweenMax.from(".content", 2, {
+          delay: 3.2,
+          opacity: 0,
+          ease: Power2.easeInOut,
+        });
+
+        TweenMax.to(".content", 2, {
+          opacity: 1,
+          y: -300,
+          delay: 3.2,
+          ease: Power2.easeInOut,
+        });
+      }
+    </script>
+
+    <script type="text/javascript">
+      TweenMax.from(".account", 1.6, {
+        delay: 0.8,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".logo", 1.6, {
+        delay: 1,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".search", 1.4, {
+        delay: 1.2,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".menu-btn", 1.4, {
+        delay: 1.4,
+        opacity: 0,
+        y: 20,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".contact", 1.4, {
+        delay: 1,
+        opacity: 0,
+        y: 40,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".tag", 1.4, {
+        delay: 1,
+        opacity: 0,
+        y: -40,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".e-shop", 2, {
+        delay: 1.6,
+        opacity: 0,
+        y: 40,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".year", 2, {
+        delay: 1.6,
+        opacity: 0,
+        x: -40,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".add", 2, {
+        delay: 1,
+        opacity: 0,
+        x: -40,
+        rotation: 90,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".arrow-left", 2, {
+        delay: 2.8,
+        opacity: 0,
+        x: 40,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".arrow-right", 2, {
+        delay: 2.8,
+        opacity: 0,
+        x: -40,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.from(".line", 2, {
+        delay: 2.8,
+        opacity: 0,
+        x: -30,
+        ease: Expo.easeInOut,
+      });
+
+      TweenMax.staggerFrom(
+        ".media ul li",
+        2,
+        {
+          delay: 2.8,
+          opacity: 0,
+          y: 40,
+          ease: Expo.easeInOut,
+        },
+        0.2
+      );
+    </script>
+  </body>
+</html>
