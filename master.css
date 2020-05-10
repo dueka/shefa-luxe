@@ -12,6 +12,13 @@ body {
   font-family: Poppins;
   background: url(hero.jpg) no-repeat 50% 50%;
 }
+/* 
+@media (max-width: 900px) {
+  .container {
+    padding-left: 30px;
+    width: 100%;
+  }
+} */
 
 .content {
   width: 60%;
@@ -294,6 +301,11 @@ button {
   transform: rotate(90deg);
 }
 
+/* @media (max-width: 900px) {
+  .e-shop {
+    display: none;
+  } */
+
 .e-shop a {
   text-decoration: none;
   color: black;
@@ -427,26 +439,4 @@ img {
     left: 46%;
     width: 0%;
   }
-}
-
-/* Cart */
-.nav-icon {
-  font-size: 1.5rem;
-}
-.cart-btn {
-  position: absolute;
-  cursor: pointer;
-  bottom: 15px;
-  /* right: 30px; */
-  right: 1.4em;
-}
-
-.cart-items {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: var(--primaryColor);
-  padding: 0 5px;
-  border-radius: 30%;
-  color: var(--mainWhite);
 }
