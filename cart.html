@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta hsttp-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="shefaluxe - ig@shefaluxe" />
+    <link rel="icon" href="yourIconUrl" type="image/gif" sizes="16x16" />
+    <title>Shefa Luxe</title>
+
+    <!-- external stylesheet -->
+    <!-- <link rel="stylesheet" href="cart.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- bootstrapcdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- icon pack -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- tweenmax (greensock) cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="animate.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVIGATION STARTS -->
+
+    <div class="nav">
+      <div class="menu-open">
+        <ion-icon name="menu"></ion-icon>
+      </div>
+      <div class="brand">
+        <span><a href="index.html">Shefa Luxe</a></span>
+      </div>
+      <!-- Cart Nav Dynamic -->
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+
+      <!-- End Cart Nav Dynamic -->
+      <div class="menu">
+        <div class="menu-close">
+          <ion-icon name="close"></ion-icon>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">collection</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="media-menu">
+          <ul>
+            <li>
+              <ion-icon name="logo-facebook"></ion-icon>
+            </li>
+            <li>
+              <ion-icon name="logo-instagram"></ion-icon>
+            </li>
+            <li>
+              <ion-icon name="logo-twitter"></ion-icon>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- NAVIGATION ENDS -->
+
+    <!-- PRODUCT STARTS HERE -->
+
+    <section class="products">
+      <div class="products-center">
+        <!-- Single Product -->
+
+        <!-- End of single product -->
+      </div>
+    </section>
+    <!--Product ends here -->
+    <!-- Cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fa fa-window-close-o"></i>
+        </span>
+        <h2>Your Cart</h2>
+        <div class="cart-content">
+          <!-- Cart item -->
+          <div class="cart-item"></div>
+          <!-- End of Cart Item -->
+        </div>
+        <!-- Cart footer -->
+        <div class="cart-footer">
+          <h3>Your Total : # <span class="cart-total">0</span></h3>
+          <button class="clear-cart banner-btn">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of cart -->
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      //Scroll reveal animations
+
+      new WOW().init();
+
+      //Scroll activated background change
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".nav");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+
+      //Toggle MENU
+
+      var t1 = new TimelineMax({ paused: true });
+      t1.to(".menu", 0.5, {
+        left: "0%",
+        ease: Power2.easeInOut,
+      });
+
+      t1.reverse();
+      $(document).on("click", ".menu-open", function () {
+        t1.reversed(!t1.reversed());
+      });
+      $(document).on("click", ".menu-close", function () {
+        t1.reversed(!t1.reversed());
+      });
+    </script>
+  </body>
+</html>

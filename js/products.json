@@ -1,0 +1,140 @@
+{
+    "items": [
+        {
+            "sys": {
+                "id": "1"
+            },
+            "fields": {
+                "title": "NEN Skirt",
+                "price": 10.99,
+                "color": "blue",
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "https://res.cloudinary.com/thstag/image/upload/v1588813453/41537551_268580050431039_5490134006726181470_n_sfdrme.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "2"
+            },
+            "fields": {
+                "title": "NORT Blouse",
+                "price": 12.99,
+                "color": "blue",
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "https://res.cloudinary.com/thstag/image/upload/v1588811633/66126527_216943622615567_4127724694693840385_n_ynf6we.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "3"
+            },
+            "fields": {
+                "title": "Kaylie",
+                "price": 12.99,
+                "color": "blue",
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "https://res.cloudinary.com/thstag/image/upload/v1588811817/67325656_877343582652429_6663889149211211863_n_agxw3l.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "4"
+            },
+            "fields": {
+                "title": "Tess",
+                "price": 22.99,
+                "color": "blue",
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "https://res.cloudinary.com/thstag/image/upload/v1588812129/tess_ziw2z7.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "5"
+            },
+            "fields": {
+                "title": "Lima",
+                "price": 88.99,
+                "color": "blue",
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "https://res.cloudinary.com/thstag/image/upload/v1588813728/prod-08_ccgtxq.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "6"
+            },
+            "fields": {
+                "title": "Shan Top",
+                "price": 32.99,
+                "color": "blue",
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "https://res.cloudinary.com/thstag/image/upload/v1588812623/67773116_495415737683589_8991679410319175446_n_vc2ndx.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "7"
+            },
+            "fields": {
+                "title": "Neon",
+                "price": 45.99,
+                "color": "blue",
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "https://res.cloudinary.com/thstag/image/upload/v1588812908/89719932_210497006827530_133912558794143014_n_blqtrh.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "8"
+            },
+            "fields": {
+                "title": "Elena",
+                "price": 33.99,
+                "color": "blue",
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "https://res.cloudinary.com/thstag/image/upload/v1588812960/75458083_186942915778778_7241380261994692366_n_darljb.jpg"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

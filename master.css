@@ -198,6 +198,16 @@ button {
   right: 160px;
 }
 
+.shopping-cart {
+  position: fixed;
+  right: 80px;
+}
+
+.shopping-cart a {
+  text-decoration: none;
+  color: #000;
+}
+
 .contact {
   padding: 10px 30px;
   position: fixed;
