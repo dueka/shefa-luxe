@@ -428,3 +428,25 @@ img {
     width: 0%;
   }
 }
+
+/* Cart */
+.nav-icon {
+  font-size: 1.5rem;
+}
+.cart-btn {
+  position: absolute;
+  cursor: pointer;
+  bottom: 15px;
+  /* right: 30px; */
+  right: 1.4em;
+}
+
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primaryColor);
+  padding: 0 5px;
+  border-radius: 30%;
+  color: var(--mainWhite);
+}

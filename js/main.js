@@ -1,3 +1,11 @@
+const client = contentful.createClient({
+  // This is the space ID. A space is like a project folder in Contentful terms
+  space: "fj0pbjvst8ew",
+  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+  accessToken: "HGdwcK3Uk9hMcwc-RCMB32V0PQQf2N5zGqF4if3XN0s",
+});
+// console.log(client);
+
 const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {
@@ -38,9 +46,14 @@ let buttonsDom = [];
 class Products {
   async getProducts() {
     try {
-      let result = await fetch("js/products.json");
-      let data = await result.json();
-      let products = data.items;
+      let contentful = await client.getEntries({
+        content_type: "shefaLuxe",
+      });
+      // console.log(contentful);
+
+      // let result = await fetch("js/products.json");
+      // let data = await result.json();
+      let products = contentful.items;
       products = products.map((item) => {
         const { title, price } = item.fields;
         const { id } = item.sys;
@@ -57,7 +70,7 @@ class Products {
 // Display products
 class UI {
   displayProducts(products) {
-    console.log(products);
+    // console.log(products);
     let result = "";
     products.forEach((product) => {
       result += `
