@@ -689,4 +689,13 @@ a ion-icon {
   .contact {
     display: none;
   }
+
+  .menu {
+    /* position: absolute; */
+    /* top: 0; */
+    width: 70%;
+    height: 100vh;
+    background: #121212;
+    opacity: 0;
+  }
 }
