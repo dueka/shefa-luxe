@@ -155,12 +155,6 @@ button {
   margin: 0 16px;
 }
 
-/* @media only screen and (max-width: 37.5em) {
-  .top-bar ul {
-    justify-content: center;
-  }
-} */
-
 .menu-btn {
   position: fixed;
   /* right: 20px; */
@@ -193,7 +187,6 @@ button {
 
 .account {
   position: fixed;
-  /* left: 4; */
   right: 10rem;
 }
 
@@ -215,11 +208,11 @@ button {
   }
 }
 
-@media only screen and (max-width: 75em) {
+/* @media only screen and (max-width: 75em) {
   .account {
     left: 24rem;
   }
-}
+} */
 
 .logo {
   position: fixed;
@@ -257,11 +250,11 @@ button {
   }
 }
 
-@media only screen and (max-width: 75em) {
+/* @media only screen and (max-width: 75em) {
   .e-shop {
     left: 32rem;
   }
-}
+} */
 
 .tag-line {
   position: fixed;
@@ -288,12 +281,12 @@ button {
   }
 }
 
-@media only screen and (max-width: 75em) {
+/* @media only screen and (max-width: 75em) {
   .tag-line {
-    /* top: 5rem; */
     left: 3rem;
   }
-}
+} */
+
 .contact {
   padding: 10px 30px;
   position: fixed;
@@ -397,6 +390,13 @@ button {
   color: #000;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .img {
+    /* top: 5rem; */
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 62.5em) {
   .title {
     /* top: 5rem; */
@@ -473,13 +473,13 @@ button {
   }
 }
 
-@media only screen and (max-width: 75em) {
+/* @media only screen and (max-width: 75em) {
   .media ul {
     position: fixed;
     top: 42.5rem;
     left: 3.8rem;
   }
-}
+} */
 
 /* Animations */
 
