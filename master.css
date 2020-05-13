@@ -223,6 +223,13 @@ button {
 .logo img {
   width: 100%;
 }
+
+@media only screen and (max-width: 37.5em) {
+  .logo img {
+    width: 6rem;
+  }
+}
+
 .search {
   position: fixed;
   right: 160px;
@@ -240,7 +247,8 @@ button {
 
 @media only screen and (max-width: 37.5em) {
   .e-shop {
-    left: 18rem;
+    right: 5px;
+    font-size: 10px;
   }
 }
 
@@ -270,7 +278,7 @@ button {
 @media only screen and (max-width: 37.5em) {
   .tag-line {
     top: 5rem;
-    left: 2rem;
+    left: 20px;
   }
 }
 
@@ -305,6 +313,7 @@ button {
   top: 166px;
   /* left: 100spx; */
   padding: 10px 30px;
+  font-size: 25px;
 }
 
 .year {
