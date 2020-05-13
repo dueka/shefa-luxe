@@ -155,14 +155,28 @@ button {
   margin: 0 16px;
 }
 
+/* @media only screen and (max-width: 37.5em) {
+  .top-bar ul {
+    justify-content: center;
+  }
+} */
+
 .menu-btn {
   position: fixed;
-  right: 20px;
+  /* right: 20px; */
+  left: 1rem;
   padding: 16px 0 0 0;
   width: 40px;
   height: 40px;
   margin-top: -1.4rem;
   font-size: 24px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .menu-btn {
+    position: fixed;
+    left: 1rem;
+  }
 }
 
 .one,
@@ -179,21 +193,27 @@ button {
 
 .account {
   position: fixed;
-  left: 40px;
+  /* left: 4; */
+  right: 10rem;
 }
 
 .account a {
   margin-left: 8px;
   color: black;
+  list-style: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .account {
+    /* top: 5rem; */
+    left: 4rem;
+  }
 }
 
 .logo {
   position: fixed;
   left: 180px;
-  /* font-family: "Charm"; */
-  /* font-weight: bolder; */
-  /* font-size: 20px; */
-  width: 10%;
+  width: 5%;
 }
 
 .logo img {
@@ -214,11 +234,14 @@ button {
   color: black;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .e-shop {
+    left: 18rem;
+  }
+}
+
 .tag-line {
   position: fixed;
-  /* top: 490px;
-  left: 692px;
-  padding: 10px 30px; */
   right: 500px;
   color: grey;
 }
@@ -228,15 +251,12 @@ button {
   color: black;
 }
 
-/* .shopping-cart {
-  position: fixed;
-  right: 80px;
+@media only screen and (max-width: 37.5em) {
+  .tag-line {
+    top: 5rem;
+    left: 2rem;
+  }
 }
-
-.shopping-cart a {
-  text-decoration: none;
-  color: #000;
-} */
 
 .contact {
   padding: 10px 30px;
@@ -277,6 +297,20 @@ button {
   top: 686px;
   left: 132px;
   padding: 10px 30px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .arrow-left {
+    position: fixed;
+    top: 25rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .arrow-right {
+    position: fixed;
+    top: 25rem;
+  }
 }
 
 .add {
@@ -320,13 +354,6 @@ button {
   height: 1px;
 }
 
-@media (max-width: 768px) {
-  .e-shop {
-    left: 560px;
-    position: fixed;
-  }
-}
-
 .media ul {
   list-style: none;
   position: fixed;
@@ -343,6 +370,15 @@ button {
 .media ul li a {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .media ul {
+    position: fixed;
+    top: 32rem;
+    left: 42px;
+    padding: 10px 30px;
+  }
 }
 
 /* Animations */
