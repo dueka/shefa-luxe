@@ -205,8 +205,19 @@ button {
 
 @media only screen and (max-width: 37.5em) {
   .account {
-    /* top: 5rem; */
     left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .account {
+    left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .account {
+    left: 24rem;
   }
 }
 
@@ -240,6 +251,18 @@ button {
   }
 }
 
+@media only screen and (max-width: 62.5em) {
+  .e-shop {
+    left: 18rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .e-shop {
+    left: 32rem;
+  }
+}
+
 .tag-line {
   position: fixed;
   right: 500px;
@@ -258,6 +281,19 @@ button {
   }
 }
 
+@media only screen and (max-width: 62.5em) {
+  .tag-line {
+    top: 5rem;
+    left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .tag-line {
+    /* top: 5rem; */
+    left: 3rem;
+  }
+}
 .contact {
   padding: 10px 30px;
   position: fixed;
@@ -313,6 +349,22 @@ button {
   }
 }
 
+@media only screen and (max-width: 62.5em) {
+  .arrow-left {
+    position: fixed;
+    top: 28.6rem;
+    /* right: 15rem; */
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .arrow-right {
+    position: fixed;
+    top: 28.5rem;
+    /* right: 10rem; */
+  }
+}
+
 .add {
   position: fixed;
   top: 556px;
@@ -343,6 +395,38 @@ button {
 
 .title a {
   color: #000;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .title {
+    /* top: 5rem; */
+    left: 2rem;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .img {
+    /* top: 5rem; */
+    left: 1rem;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .title {
+    /* top: 5rem; */
+    left: 25rem;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .img {
+    /* top: 5rem; */
+    left: 25rem;
+    width: 40%;
+  }
 }
 
 .line {
@@ -378,6 +462,22 @@ button {
     top: 32rem;
     left: 42px;
     padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .media ul {
+    position: fixed;
+    top: 28rem;
+    left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .media ul {
+    position: fixed;
+    top: 42.5rem;
+    left: 3.8rem;
   }
 }
 
