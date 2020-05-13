@@ -18,7 +18,9 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
   </head>
@@ -53,7 +55,7 @@
 
           <li>
             <div class="logo">
-              <span>Shefa Luxe</span>
+                <img src="https://res.cloudinary.com/thstag/image/upload/v1589324237/imageedit_1_8279585072_avhndb.png" alt="shefaluxe logo">
             </div>
           </li>
 
@@ -62,25 +64,74 @@
               <i class="fa fa-search"></i>
             </div>
           </li>
-
-          <!-- <li>
-            <div class="shopping-cart">
-              <div class="cart">
-                <a href="cart.html">
-                  <ion-icon name="basket"></ion-icon>Cart<span>0</span>
-                </a>
-              </div>
-            </div>
-          </li> -->
           <li>
-            <div class="menu-btn">
-              <span class="one"></span>
-              <span class="two"></span>
+            <div class="e-shop">
+              <span><a href="cart.html">Shop</a></span>
+              <i class="fa fa-shopping-bag"></i>
+            </div>
+      
+          </li>
+          <li>
+            <div class="tag-line">
+              <span><a href="collection.html">Explore Shefa</a></span>
             </div>
           </li>
+         
+
+          <!-- <li>
+           
+          </li> -->
         </ul>
+        <div class="menu-btn">
+          <ion-icon name="menu"></ion-icon>
+        </div>
       </div>
 
+    </div>
+    
+    <div class="menu">
+      <div class="close-menu">
+        <ion-icon name="close"></ion-icon>
+      </div>
+
+      <div class="nav">
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <a href="index.html">Home</a>
+          </li>
+
+          <li class="main-menu-item">
+            <a href="collection.html">Collections &nbsp;  <ion-icon name="add-circle"></ion-icon></ion-icon></a>
+          </li>
+
+          <ul class="submenu">
+            <li class="submenu-item">
+              <a href="shop.html">Products</a>
+            </li>
+            <li class="submenu-item">
+              <a href="cart.html">Cart</a>
+            </li>
+          </ul>
+            
+          <li class="main-menu-item">
+            <a href="about.html">Our Story</a>
+          </li>
+
+          <li class="main-menu-item">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+        </div>
+
+        <div class="contact">
+          <p class="call">
+            <ion-icon name="call"></ion-icon>&nbsp;&nbsp;&nbsp;+////
+          </p>
+          <p class="mail">
+            <ion-icon name="mail"></ion-icon
+            >&nbsp;&nbsp;&nbsp;////
+        </div>
+      </div>
       <div class="data">
         <div class="contact">
           <span><a href="contact.html">Contact</a></span>
@@ -90,8 +141,7 @@
         <div class="tag">
           <span
             >Don't Settle For, <br />
-            Basic Baby</span
-          >
+            Basic Baby</span>
         </div>
 
         <div class="year">2020</div>
@@ -114,19 +164,14 @@
       </div>
 
       <div class="title">
-        <span>Shefa<br />Luxe</span>
+        <a href="collections.html"> 
+          <span>Fill your<br />Collections</span>
+        </a>      
       </div>
 
       <div class="line"></div>
 
-      <div class="e-shop">
-        <span><a href="cart.html">Shop</a></span>
-        <i class="fa fa-shopping-bag"></i>
-      </div>
-
-      <div class="tag-line">
-        <span><a href="collection.html">Explore Shefa</a></span>
-      </div>
+      
 
       <div class="media">
         <ul>
@@ -294,5 +339,76 @@
         0.2
       );
     </script>
+    <script type="text/javascript">
+      $("ul.main-menu li").click(function (e) {
+        e.preventDefault();
+
+        if ($(this).siblings("li").find("ul.submenu:visible").length) {
+          $("ul.submenu").slideUp("normal");
+        }
+        $(this).find("ul.submenu").slideToggle("normal");
+      });
+
+      var t1 = new TimelineMax({ paused: true });
+
+      t1.to(".menu", 0.8, {
+        autoAlpha: 1,
+      });
+
+      t1.staggerFrom(
+        ".main-menu li a:not(.submenu li a)",
+        1,
+        {
+          opacity: 0,
+          y: 10,
+          ease: Power3.easeInOut,
+        },
+        0.1
+      );
+
+      t1.from(".submenu", 0.8, {
+        autoAlpha: 0,
+      });
+
+      t1.staggerFrom(
+        ".media ul li",
+        1,
+        {
+          opacity: 0,
+          y: 10,
+          ease: Power3.easeInOut,
+        },
+        0.1,
+        "-=2"
+      );
+
+      t1.from(".call", 1, {
+        delay: -2,
+        opacity: 0,
+        y: 10,
+        ease: Power3.easeInOut,
+      });
+
+      t1.from(".mail", 1, {
+        delay: -1.6,
+        opacity: 0,
+        y: 10,
+        ease: Power3.easeInOut,
+      });
+
+      
+      t1.reverse();
+
+      $(document).on("click", ".menu-btn", function () {
+        t1.reversed(!t1.reversed());
+      });
+
+      $(document).on("click", ".close-menu", function () {
+        t1.reversed(!t1.reversed());
+      });
+
+    </script>
+
+
   </body>
 </html>
