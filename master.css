@@ -276,8 +276,8 @@ button {
 
 @media only screen and (max-width: 62.5em) {
   .tag-line {
-    top: 5rem;
-    left: 2rem;
+    /* top: 5rem; */
+    right: 15rem;
   }
 }
 
