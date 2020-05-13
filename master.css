@@ -10,15 +10,8 @@ body {
 body {
   cursor: crosshair;
   font-family: Poppins;
-  background: url(hero.jpg) no-repeat 50% 50%;
+  background: url("hero.jpg") no-repeat 50% 50%;
 }
-/* 
-@media (max-width: 900px) {
-  .container {
-    padding-left: 30px;
-    width: 100%;
-  }
-} */
 
 .content {
   width: 60%;
@@ -168,6 +161,8 @@ button {
   padding: 16px 0 0 0;
   width: 40px;
   height: 40px;
+  margin-top: -1.4rem;
+  font-size: 24px;
 }
 
 .one,
@@ -195,17 +190,45 @@ button {
 .logo {
   position: fixed;
   left: 180px;
-  font-family: "Charm";
-  font-weight: bolder;
-  font-size: 20px;
+  /* font-family: "Charm"; */
+  /* font-weight: bolder; */
+  /* font-size: 20px; */
+  width: 10%;
 }
 
+.logo img {
+  width: 100%;
+}
 .search {
   position: fixed;
   right: 160px;
 }
 
-.shopping-cart {
+.e-shop {
+  position: fixed;
+  right: 80px;
+}
+
+.e-shop a {
+  text-decoration: none;
+  color: black;
+}
+
+.tag-line {
+  position: fixed;
+  /* top: 490px;
+  left: 692px;
+  padding: 10px 30px; */
+  right: 500px;
+  color: grey;
+}
+
+.tag-line a {
+  text-decoration: none;
+  color: black;
+}
+
+/* .shopping-cart {
   position: fixed;
   right: 80px;
 }
@@ -213,7 +236,7 @@ button {
 .shopping-cart a {
   text-decoration: none;
   color: #000;
-}
+} */
 
 .contact {
   padding: 10px 30px;
@@ -231,7 +254,7 @@ button {
 .tag {
   position: fixed;
   top: 166px;
-  left: 152px;
+  /* left: 100spx; */
   padding: 10px 30px;
 }
 
@@ -284,6 +307,10 @@ button {
   font-family: "Charm";
 }
 
+.title a {
+  color: #000;
+}
+
 .line {
   position: fixed;
   left: 360px;
@@ -293,34 +320,11 @@ button {
   height: 1px;
 }
 
-.e-shop {
-  padding: 10px 30px;
-  position: fixed;
-  left: 1020px;
-  top: 180px;
-  transform: rotate(90deg);
-}
-
-/* @media (max-width: 900px) {
+@media (max-width: 768px) {
   .e-shop {
-    display: none;
-  } */
-
-.e-shop a {
-  text-decoration: none;
-  color: black;
-}
-.tag-line {
-  position: fixed;
-  top: 490px;
-  left: 692px;
-  padding: 10px 30px;
-  color: grey;
-}
-
-.tag-line a {
-  text-decoration: none;
-  color: black;
+    left: 560px;
+    position: fixed;
+  }
 }
 
 .media ul {
@@ -438,5 +442,115 @@ img {
   100% {
     left: 46%;
     width: 0%;
+  }
+}
+
+/* Drop Down Navigation Menu */
+
+h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+  text-align: center;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #121212;
+  opacity: 0;
+}
+
+.close-menu {
+  position: fixed;
+  margin: 1em;
+  font-size: 24px;
+  color: #fff;
+  z-index: 1;
+}
+
+.nav {
+  position: absolute;
+  left: 21%;
+  margin-top: 8%;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.main-menu-item {
+  padding-top: 30px;
+}
+
+.main-menu-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.submenu-item a {
+  color: grey;
+}
+
+.submenu li {
+  margin: 20px 0;
+}
+
+a ion-icon {
+  position: relative;
+  font-size: 9px;
+  opacity: 0.4;
+}
+
+.submenu {
+  display: none;
+}
+
+.contact {
+  color: #fff;
+  position: absolute;
+  bottom: 70px;
+  right: 24%;
+}
+
+.contact p {
+  font-weight: lighter;
+  color: grey;
+  font-family: "Helvetica";
+}
+
+.media {
+  position: absolute;
+  bottom: 70px;
+  left: 22%;
+}
+
+.media ul {
+  list-style: none;
+}
+
+.media ul li {
+  display: inline-block;
+  color: grey;
+  font-weight: lighter;
+  padding-right: 16px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .nav {
+    margin-top: 20%;
+  }
+
+  .contact {
+    display: none;
   }
 }
