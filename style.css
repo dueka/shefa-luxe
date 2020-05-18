@@ -602,11 +602,11 @@ form h2 {
   left: 50%;
 }
 
-.input-div .focus .i i {
+.input-div .focus {
   color: #38d39f;
 }
 
-.input-div .focus div h5 {
+.input-div .focus div {
   top: -5px;
   font-size: 15px;
 }
@@ -624,24 +624,12 @@ form h2 {
   margin-bottom: 4px;
 }
 
-.i {
-  color: #d9d9d9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.i i {
-  color: #d9d9d9;
-  transition: 0.3s;
-}
-
 .input-div > div {
   position: relative;
   height: 45px;
 }
 
-.input-div > div h5 {
+.input-div > div {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -696,7 +684,7 @@ form h2 {
 }
 
 @media screen and (max-width: 1000px) {
-  form {
+  .form {
     width: 290px;
   }
 
@@ -760,7 +748,7 @@ form h2 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4caf50;
+  background: black;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -778,6 +766,7 @@ form h2 {
 .form .message .a {
   color: #4caf50;
   text-decoration: none;
+  font-size: 10rem;
 }
 
 .form .login-form {
