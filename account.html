@@ -41,6 +41,13 @@
     <!-- for on scroll animations -->
     <link rel="stylesheet" href="animate.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"
+      integrity="sha256-bd8XIKzrtyJ1O5Sh3Xp3GiuMIzWC42ZekvrMMD4GxRg="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="product-container">
@@ -78,51 +85,77 @@
       <!-- NAVIGATION ENDS -->
     </div>
     <img class="wave" src="images/wave.png" />
-    <div class="account_container">
+    <!-- <div class="account_container">
       <div class="img wow fadeInDown" data-wow-delay="0.4s">
         <img src="images/mobilelogin.svg" />
       </div>
       <div class="login-content">
-        <form action="index.html">
-          <img
-            class="avatar wow fadeInRight"
-            data-wow-delay="0.4s"
-            src="images/avatar.svg"
-          />
-          <h2 class="title">Welcome</h2>
-          <div class="input-div one focus">
-            <div class="i">
-              <i class="fas fa-user"></i>
+        <form id="todoInputForm">
+          <div class="register-form">
+            <img
+              class="avatar wow fadeInRight"
+              data-wow-delay="0.4s"
+              src="images/avatar.svg"
+            />
+            <h2 class="title">Welcome</h2>
+            <div class="input-div one focus">
+              <div class="i">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="div">
+                <h5>Email</h5>
+                <input type="email" class="form-control" id="emailTitle" />
+              </div>
             </div>
-            <div class="div">
-              <h5>Username</h5>
-              <input type="text" class="input" />
+            <div class="input-div pass">
+              <div class="i">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="div">
+                <h5>Password</h5>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="passwordTitle"
+                />
+              </div>
             </div>
+            <button class="btn" value="Register" type="submit">Register</button>
+            <p class="message">Already Registered? <a href="">Login</a></p>
           </div>
-          <div class="input-div pass">
-            <div class="i">
-              <i class="fas fa-lock"></i>
-            </div>
-            <div class="div">
-              <h5>Password</h5>
-              <input type="password" class="input" />
-            </div>
-          </div>
-          <div class="input-div pass">
-            <div class="i">
-              <i class="fas fa-lock"></i>
-            </div>
-            <div class="div">
-              <h5>Confirm Password</h5>
-              <input type="password" class="input" />
-            </div>
-          </div>
-          <a href="#">Forgot Password?</a>
-          <input type="submit" class="btn" value="Register" />
+        </form>
+        
+      </div>
+    </div> -->
+
+    <div class="login-page">
+      <div class="form">
+        <form action="" class="register-form" id="todoInputForm">
+          <input type="text" placeholder="Enter Email" id="emailTitle" />
+          <input type="text" placeholder="Password" id="passwordTitle" />
+          <button>Register</button>
+          <p class="message">Already Registered? <a href="#">Login</a></p>
+          <div class="panel-body" id="postResult"></div>
+        </form>
+        <!-- <div class="panel-body" id="postResult"></div> -->
+
+        <form action="" class="login-form" id="todoLoginForm">
+          <input type="text" placeholder="Enter Email" id="emailTitle" />
+          <input type="text" placeholder="Password" id="passwordTitle" />
+          <button>Login</button>
+          <p class="message">Not Registered? <a href="#">Register</a></p>
+          <div class="panel-body" id="postLogin"></div>
         </form>
       </div>
     </div>
 
+    <script src="js/axios.js"></script>
+    <script type="text/javascript">
+      // Form
+      $(".message a").click(function () {
+        $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+      });
+    </script>
     <script type="text/javascript">
       //Scroll reveal animations
 
@@ -152,6 +185,5 @@
         t1.reversed(!t1.reversed());
       });
     </script>
-    <!-- <script type="text/javascript" src="js/main.js"></script> -->
   </body>
 </html>
